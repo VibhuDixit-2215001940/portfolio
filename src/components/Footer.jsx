@@ -10,7 +10,14 @@ export default function Footer() {
       <div className="footer__inner">
         <div className="footer__brand">
           <a href="#main" className="footer__logo">
-            <img className="footer__avatar" src="/vibhu-avatar.jpg" alt="Vibhu Dixit" />
+            <img
+              className="footer__avatar"
+              src="/vibhu-avatar-136.png"
+              srcSet="/vibhu-avatar-136.png 1x, /vibhu-avatar-272.png 2x"
+              width="36"
+              height="36"
+              alt="Vibhu Dixit"
+            />
             <span>Vibhu Dixit</span>
           </a>
           <p className="footer__tagline">

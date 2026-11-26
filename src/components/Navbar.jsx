@@ -22,7 +22,14 @@ export default function Navbar() {
   return (
     <header className="nav">
       <a className="nav__brand" href="#main">
-        <img className="nav__avatar" src="/vibhu-avatar.jpg" alt="Vibhu Dixit" />
+        <img
+          className="nav__avatar"
+          src="/vibhu-avatar-136.png"
+          srcSet="/vibhu-avatar-136.png 1x, /vibhu-avatar-272.png 2x"
+          width="36"
+          height="36"
+          alt="Vibhu Dixit"
+        />
         <span>Vibhu Dixit</span>
       </a>
 

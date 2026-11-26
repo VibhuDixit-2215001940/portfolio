@@ -161,7 +161,10 @@ export default function Contact() {
           <div className="info-card">
             <div className="contact-profile">
               <img
-                src="/vibhu-avatar.jpg"
+                src="/vibhu-avatar-136.png"
+                srcSet="/vibhu-avatar-136.png 1x, /vibhu-avatar-272.png 2x"
+                width="68"
+                height="68"
                 alt="Vibhu Dixit"
                 className="contact-profile__avatar"
               />
