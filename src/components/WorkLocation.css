@@ -1,0 +1,497 @@
+/* ==========================================================================
+   Fluxora — Royal Work Location Showcase (Gurgaon Headquarters)
+   ========================================================================== */
+
+.location-section {
+  position: relative;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: clamp(60px, 8vw, 100px) var(--gutter);
+}
+
+.location-tag {
+  color: #ffd700;
+  border-color: rgba(255, 215, 0, 0.35);
+  background: rgba(212, 175, 55, 0.08);
+}
+
+.location-tag svg {
+  color: #ffd700;
+}
+
+/* ==========================================================================
+   Royal Main Card
+   ========================================================================== */
+
+.location-royal-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: clamp(28px, 4vw, 56px);
+  align-items: center;
+  background: radial-gradient(circle at 20% 0%, rgba(212, 175, 55, 0.1) 0%, rgba(26, 8, 2, 0.85) 50%, rgba(14, 4, 1, 0.96) 100%);
+  border: 1px solid rgba(212, 175, 55, 0.28);
+  border-radius: 28px;
+  padding: clamp(28px, 4.5vw, 56px);
+  box-shadow:
+    0 30px 80px -15px rgba(0, 0, 0, 0.9),
+    0 0 50px -10px rgba(212, 175, 55, 0.12),
+    inset 0 1px 0 rgba(255, 223, 128, 0.2);
+  overflow: hidden;
+}
+
+/* Regal Corner Filigree Accents */
+.royal-corner {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.royal-corner--tl {
+  top: 14px;
+  left: 14px;
+  border-top: 2px solid #ffd700;
+  border-left: 2px solid #ffd700;
+}
+
+.royal-corner--tr {
+  top: 14px;
+  right: 14px;
+  border-top: 2px solid #ffd700;
+  border-right: 2px solid #ffd700;
+}
+
+.royal-corner--bl {
+  bottom: 14px;
+  left: 14px;
+  border-bottom: 2px solid #ffd700;
+  border-left: 2px solid #ffd700;
+}
+
+.royal-corner--br {
+  bottom: 14px;
+  right: 14px;
+  border-bottom: 2px solid #ffd700;
+  border-right: 2px solid #ffd700;
+}
+
+/* ==========================================================================
+   Left Side: Information & Highlights
+   ========================================================================== */
+
+.location-info-side {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  z-index: 1;
+}
+
+.royal-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  align-self: flex-start;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(212, 175, 55, 0.12);
+  border: 1px solid rgba(255, 215, 0, 0.4);
+  color: #ffd700;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.royal-crown-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #ffd700;
+  box-shadow: 0 0 10px #ffd700, 0 0 18px rgba(255, 215, 0, 0.6);
+  animation: pulse-gold-dot 2s infinite ease-in-out;
+}
+
+@keyframes pulse-gold-dot {
+  0%, 100% {
+    transform: scale(0.9);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.3);
+    opacity: 1;
+  }
+}
+
+.location-city-title {
+  font-family: var(--font-display);
+  font-size: clamp(28px, 3.4vw, 42px);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+  background: linear-gradient(135deg, #ffffff 0%, #ffd700 55%, #ff8a1f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.location-country-sub {
+  color: rgba(255, 223, 140, 0.85);
+  font-size: clamp(14px, 1.1vw, 16px);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  margin-top: -6px;
+}
+
+.coords-capsule {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  align-self: flex-start;
+  padding: 8px 16px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 13px;
+  color: #f7df94;
+  letter-spacing: 0.04em;
+}
+
+.coords-capsule svg {
+  width: 15px;
+  height: 15px;
+  color: #ffd700;
+  flex-shrink: 0;
+}
+
+.location-desc {
+  color: var(--ink-soft);
+  font-size: 15px;
+  line-height: 1.65;
+  margin-top: 4px;
+}
+
+.royal-features {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 12px 0;
+  padding: 0;
+}
+
+.royal-features li {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.royal-feat-dot {
+  width: 8px;
+  height: 8px;
+  margin-top: 7px;
+  border-radius: 50%;
+  background: #ffd700;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+  flex-shrink: 0;
+}
+
+.royal-features strong {
+  display: block;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin-bottom: 2px;
+}
+
+.royal-features span {
+  display: block;
+  color: var(--ink-faint);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.location-actions {
+  margin-top: 8px;
+}
+
+.location-maps-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 26px;
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.2) 0%, rgba(255, 138, 31, 0.18) 100%);
+  border: 1px solid rgba(255, 215, 0, 0.45);
+  color: #ffd700;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+  transition: all 0.3s var(--ease-out);
+}
+
+.location-maps-btn svg {
+  width: 16px;
+  height: 16px;
+  color: #ffd700;
+  flex-shrink: 0;
+}
+
+.location-maps-btn:hover {
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.35) 0%, rgba(255, 138, 31, 0.32) 100%);
+  border-color: #ffd700;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(212, 175, 55, 0.25);
+}
+
+.location-maps-btn:hover svg {
+  color: #ffffff;
+}
+
+/* ==========================================================================
+   Right Side: Royal Map Poster Frame & Radar Beacon
+   ========================================================================== */
+
+.location-map-side {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.royal-map-frame {
+  position: relative;
+  width: 100%;
+  max-width: 460px;
+  background: linear-gradient(145deg, #180a04, #0a0301);
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  border-radius: 20px;
+  padding: 12px;
+  box-shadow:
+    0 24px 60px rgba(0, 0, 0, 0.85),
+    0 0 40px rgba(212, 175, 55, 0.14),
+    inset 0 0 20px rgba(0, 0, 0, 0.8);
+  transition: transform 0.4s var(--ease-out), border-color 0.4s var(--ease-out), box-shadow 0.4s var(--ease-out);
+}
+
+.royal-map-frame:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255, 215, 0, 0.65);
+  box-shadow:
+    0 32px 70px rgba(0, 0, 0, 0.9),
+    0 0 50px rgba(212, 175, 55, 0.22);
+}
+
+.royal-gold-halo {
+  position: absolute;
+  inset: -20px;
+  border-radius: 30px;
+  background: radial-gradient(circle at 50% 50%, rgba(212, 175, 55, 0.18), transparent 70%);
+  filter: blur(25px);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.map-image-container {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #030814;
+  aspect-ratio: 3 / 4;
+  box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.7);
+}
+
+.royal-map-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s var(--ease-out);
+}
+
+.royal-map-frame:hover .royal-map-img {
+  transform: scale(1.025);
+}
+
+/* Pulsating Golden Radar Beacon */
+.radar-beacon {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 32px;
+  height: 32px;
+  pointer-events: auto;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.beacon-core {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ffd700;
+  box-shadow: 0 0 14px #ffd700, 0 0 25px rgba(255, 215, 0, 0.8);
+  border: 1.5px solid #ffffff;
+  z-index: 2;
+}
+
+.beacon-wave {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1.5px solid #ffd700;
+  animation: radar-expand 2.8s infinite cubic-bezier(0.2, 0.8, 0.2, 1);
+  pointer-events: none;
+}
+
+.beacon-wave--2 {
+  animation-delay: 1.2s;
+}
+
+@keyframes radar-expand {
+  0% {
+    width: 8px;
+    height: 8px;
+    opacity: 0.95;
+    border-width: 2px;
+  }
+  100% {
+    width: 64px;
+    height: 64px;
+    opacity: 0;
+    border-width: 0.5px;
+  }
+}
+
+.beacon-tooltip {
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(15, 5, 2, 0.92);
+  border: 1px solid rgba(255, 215, 0, 0.5);
+  backdrop-filter: blur(10px);
+  padding: 5px 11px;
+  border-radius: 999px;
+  color: #ffd700;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.6);
+  pointer-events: none;
+  transition: transform 0.25s var(--ease-out);
+}
+
+.beacon-tooltip .tooltip-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #ff3d00;
+  box-shadow: 0 0 6px #ff3d00;
+}
+
+/* Light sheen overlay across the poster */
+.map-shimmer {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    115deg,
+    transparent 20%,
+    rgba(255, 215, 0, 0.07) 45%,
+    rgba(255, 255, 255, 0.12) 50%,
+    rgba(255, 215, 0, 0.07) 55%,
+    transparent 80%
+  );
+  transform: translateX(-100%);
+  animation: shimmer-sheen 6s infinite ease-in-out 2s;
+  pointer-events: none;
+}
+
+@keyframes shimmer-sheen {
+  0% {
+    transform: translateX(-120%);
+  }
+  30%, 100% {
+    transform: translateX(120%);
+  }
+}
+
+/* Museum caption footer under the map */
+.map-frame-caption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 4px 2px;
+  font-size: 11px;
+  color: rgba(255, 223, 140, 0.75);
+  letter-spacing: 0.02em;
+}
+
+.map-caption-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: #ffd700;
+  font-weight: 600;
+}
+
+.map-caption-tag svg {
+  width: 12px;
+  height: 12px;
+  color: #ffd700;
+}
+
+/* ==========================================================================
+   Responsive Adaptations
+   ========================================================================== */
+
+@media (max-width: 960px) {
+  .location-royal-card {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 36px 24px;
+  }
+
+  .location-map-side {
+    order: -1;
+  }
+
+  .royal-map-frame {
+    max-width: 380px;
+  }
+}
+
+@media (max-width: 600px) {
+  .location-royal-card {
+    padding: 28px 16px;
+    border-radius: 20px;
+  }
+
+  .royal-map-frame {
+    max-width: 100%;
+  }
+
+  .map-frame-caption {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+}
