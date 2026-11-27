@@ -55,12 +55,14 @@ export default function Hero() {
           </div>
 
           <h1 className="hero__title">
+            <span className="hero__name">Vibhu Dixit</span>
             Engineering<br />
             <em>Intelligent</em> AI<br />
             &amp; Secure Apps
           </h1>
 
           <p className="hero__sub">
+            Vibhu Dixit is an AI Engineer &amp; Cybersecurity Specialist —
             B.Tech CS (8.4 CGPA) engineer building GenAI &amp; LangGraph agents,
             Microsoft Azure cloud systems, and automated VAPT security platforms.
           </p>

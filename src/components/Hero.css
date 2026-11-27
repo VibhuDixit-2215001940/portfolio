@@ -116,6 +116,16 @@
   letter-spacing: -0.035em;
   text-shadow: 0 6px 40px rgba(0, 0, 0, 0.5);
 }
+.hero__name {
+  display: block;
+  margin-bottom: 0.28em;
+  font-size: 0.38em;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--flame-lit);
+  text-shadow: none;
+}
 .hero__title em {
   font-family: var(--font-italic);
   font-weight: 400;
