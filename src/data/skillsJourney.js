@@ -1,0 +1,416 @@
+export const skillBoxes = [
+  {
+    id: 'ai-genai',
+    badge: 'Primary Focus',
+    title: 'AI & Generative AI',
+    description:
+      'Production LLM workflows, RAG knowledge pipelines, stateful multi-step agents, and computer vision models.',
+    accent: '#3ddec8',
+  },
+  {
+    id: 'cloud-security',
+    badge: 'Cloud & Security',
+    title: 'Cloud, Infra & Cybersecurity',
+    description:
+      'Automated VAPT pipelines, endpoint telemetry, threat detection, and certified Microsoft Azure cloud operations.',
+    accent: '#7dd3fc',
+  },
+  {
+    id: 'web-fullstack',
+    badge: 'Web Engineering',
+    title: 'Frontend & Backend Web',
+    description:
+      'Responsive interfaces, enterprise RBAC portals, and scalable Node.js/Express REST architectures.',
+    accent: '#93c5fd',
+  },
+  {
+    id: 'languages-data',
+    badge: 'Core CS & Data',
+    title: 'Languages, Data & Tooling',
+    description:
+      '1,260+ algorithmic problems solved alongside relational/NoSQL databases and disciplined Git workflows.',
+    accent: '#a8b4c4',
+  },
+]
+
+export const skillTools = [
+  // === BOX 1: AI & Generative AI (9 tools) ===
+  {
+    id: 'langchain',
+    name: 'LangChain',
+    boxId: 'ai-genai',
+    accent: '#2dd4bf',
+    scatter: { left: 13, top: 18, rotate: -7, delay: 0.0 },
+    journey: [
+      'Used at Meridian Solutions (Associate AI Engineer – L2) to build modular LLM orchestration chains for enterprise process automation.',
+      'Integrated document loaders, prompt templates, and structured output parsers into production AI workflows.',
+      'Combined with vector retrievers to ground business answers against internal knowledge bases.',
+    ],
+  },
+  {
+    id: 'langgraph',
+    name: 'LangGraph',
+    boxId: 'ai-genai',
+    accent: '#fb923c',
+    scatter: { left: 32, top: 14, rotate: 5, delay: 0.3 },
+    journey: [
+      'Designed stateful, multi-step AI agent graphs with conditional branching and fallback recovery at Meridian Solutions.',
+      'Orchestrated tool-calling loops and human-in-the-loop checkpoints for reliable business workflow automation.',
+      'Structured multi-agent handoffs to eliminate repetitive manual operations across teams.',
+    ],
+  },
+  {
+    id: 'langsmith',
+    name: 'LangSmith',
+    boxId: 'ai-genai',
+    accent: '#a78bfa',
+    scatter: { left: 54, top: 16, rotate: -4, delay: 0.6 },
+    journey: [
+      'Traced end-to-end LLM runs, latency bottlenecks, and tool-invocation steps during agent development.',
+      'Evaluated prompt variants and retrieval accuracy before promoting AI workflows to cross-functional stakeholders.',
+      'Debugged edge-case hallucinations and token usage across multi-turn enterprise conversations.',
+    ],
+  },
+  {
+    id: 'rag',
+    name: 'RAG',
+    boxId: 'ai-genai',
+    accent: '#3ddec8',
+    scatter: { left: 74, top: 18, rotate: 6, delay: 0.2 },
+    journey: [
+      'Architected Retrieval-Augmented Generation pipelines to turn unstructured enterprise documents into accurate Q&A systems.',
+      'Tuned chunking, semantic search, and context grounding to minimize hallucinated outputs.',
+      'Aligned retrieval access patterns with enterprise business requirements at Meridian Solutions.',
+    ],
+  },
+  {
+    id: 'ai-agents',
+    name: 'AI Agents',
+    boxId: 'ai-genai',
+    accent: '#f59e0b',
+    scatter: { left: 88, top: 28, rotate: -6, delay: 0.5 },
+    journey: [
+      'Engineered goal-driven autonomous workflows that connect to APIs and automate repetitive operational tasks.',
+      'Completed Hugging Face "The MCP Course" to standardize how AI agents plug into external tools and data sources.',
+      'Integrated AI assistant touchpoints into live client platforms such as Zentrevo.',
+    ],
+  },
+  {
+    id: 'llm-nlp',
+    name: 'LLMs & NLP',
+    boxId: 'ai-genai',
+    accent: '#fbbf24',
+    scatter: { left: 22, top: 34, rotate: 4, delay: 0.8 },
+    journey: [
+      'Applied tokenization, entity extraction, and sentiment analysis techniques backed by Text Analytics 101 certification.',
+      'Practiced advanced prompt engineering (upGrad certified) and Neo4j GenAI fundamentals for structured reasoning.',
+      'Built practical LLM-driven productivity tools aligned with enterprise operational efficiency.',
+    ],
+  },
+  {
+    id: 'ms-ai-studio',
+    name: 'Microsoft AI Studio',
+    boxId: 'ai-genai',
+    accent: '#38bdf8',
+    scatter: { left: 43, top: 31, rotate: -5, delay: 0.4 },
+    journey: [
+      'Evaluated, configured, and integrated foundation models inside the Microsoft Azure AI ecosystem at a Microsoft Gold Partner.',
+      'Connected deployed model endpoints to enterprise automation pipelines and internal web apps.',
+      'Earned Microsoft Frontier Transformation Engineer credential for enterprise AI adoption.',
+    ],
+  },
+  {
+    id: 'yolo',
+    name: 'YOLO',
+    boxId: 'ai-genai',
+    accent: '#facc15',
+    scatter: { left: 66, top: 34, rotate: 7, delay: 0.7 },
+    journey: [
+      'Applied YOLO object detection for real-time visual recognition and automated classification tasks.',
+      'Integrated AI image-based waste recognition into the Swipe2Clean platform to identify waste categories accurately.',
+      'Combined detection outputs with geolocation workflows to improve cleanup verification.',
+    ],
+  },
+  {
+    id: 'image-processing',
+    name: 'Image Processing',
+    boxId: 'ai-genai',
+    accent: '#fb7185',
+    scatter: { left: 84, top: 48, rotate: -4, delay: 0.9 },
+    journey: [
+      'Built image preprocessing and feature extraction pipelines supporting computer-vision classification.',
+      'Enabled automated waste image verification in Swipe2Clean, contributing to a 30% rise in reported cleanups.',
+      'Optimized image asset handling and crisp client-side rendering across web portals.',
+    ],
+  },
+
+  // === BOX 2: Cloud, Infra & Cybersecurity (8 tools) ===
+  {
+    id: 'azure',
+    name: 'Microsoft Azure',
+    boxId: 'cloud-security',
+    accent: '#0ea5e9',
+    scatter: { left: 11, top: 44, rotate: 5, delay: 0.2 },
+    journey: [
+      'Certified Microsoft Azure Security Engineer (AZ-500), Azure Administrator (AZ-104), Identity Admin (SC-300), AZ-900 & SC-900.',
+      'Managed cloud identities, RBAC policies, and secure infrastructure deployments during work at Meridian Solutions.',
+      'Delivered Microsoft SSO-authenticated portals such as CleanMax Intune Attendance AI.',
+    ],
+  },
+  {
+    id: 'fabric-sentinel',
+    name: 'Fabric & Sentinel',
+    boxId: 'cloud-security',
+    accent: '#38bdf8',
+    scatter: { left: 30, top: 49, rotate: -6, delay: 0.5 },
+    journey: [
+      'Worked with Microsoft Sentinel SIEM concepts and Microsoft Fabric analytics for centralized security visibility.',
+      'Analyzed system-level telemetry, behavioral indicators, and log patterns for proactive threat detection.',
+      'Supported enterprise security assessments aligned with Microsoft Gold Partner best practices.',
+    ],
+  },
+  {
+    id: 'vapt-nmap',
+    name: 'VAPT & Nmap',
+    boxId: 'cloud-security',
+    accent: '#34d399',
+    scatter: { left: 51, top: 47, rotate: 4, delay: 0.1 },
+    journey: [
+      'Built a web-based VAPT automation platform as a Cybersecurity Intern at Meridian Solutions, cutting assessment time by 60%.',
+      'Engineered SecurityAstra (tools.securityastra.com) using Nmap and Python for automated network & web scanning.',
+      'Automated port discovery, service enumeration, and vulnerability reporting across web apps and endpoints.',
+    ],
+  },
+  {
+    id: 'owasp',
+    name: 'OWASP Top 10',
+    boxId: 'cloud-security',
+    accent: '#10b981',
+    scatter: { left: 72, top: 53, rotate: -5, delay: 0.7 },
+    journey: [
+      'Implemented automated security testing workflows targeting OWASP Top 10 web vulnerabilities (SQLi, XSS, auth flaws).',
+      'Earned EC-Council SQL Injection Attacks certification and Certified API Breaching Expert credential.',
+      'Applied secure coding, input sanitization, and role-based access controls across client portals like CleanMax PRISM.',
+    ],
+  },
+  {
+    id: 'virustotal-wdk',
+    name: 'VirusTotal & WDK',
+    boxId: 'cloud-security',
+    accent: '#22d3ee',
+    scatter: { left: 16, top: 64, rotate: -7, delay: 0.4 },
+    journey: [
+      'Integrated VirusTotal threat intelligence into SecurityAstra for automated hash/URL/domain reputation checks.',
+      'Leveraged Windows Driver Kit (WDK) concepts to inspect endpoint telemetry, process activity, and system events.',
+      'Combined endpoint indicators with automated threat classification workflows.',
+    ],
+  },
+  {
+    id: 'aws',
+    name: 'AWS',
+    boxId: 'cloud-security',
+    accent: '#fb923c',
+    scatter: { left: 38, top: 66, rotate: 6, delay: 0.8 },
+    journey: [
+      'Completed AWS Cloud Practitioner Essentials and AWS Introduction to Generative AI certifications.',
+      'Gained foundational cloud architecture and IAM exposure across EC2, S3, and cloud security workflows.',
+      'Applied multi-cloud architectural awareness alongside primary Microsoft Azure workloads.',
+    ],
+  },
+  {
+    id: 'gcp',
+    name: 'GCP',
+    boxId: 'cloud-security',
+    accent: '#60a5fa',
+    scatter: { left: 60, top: 65, rotate: -4, delay: 0.3 },
+    journey: [
+      'Completed the Google Cloud Arcade Facilitator Program and Trust & Security with Google Cloud.',
+      'Practiced cloud IAM, compute provisioning, and security hygiene hands-on in Google Cloud labs.',
+      'Earned Google Skillshop Campaign Manager 360 accreditation for digital telemetry.',
+    ],
+  },
+  {
+    id: 'cicd-bash',
+    name: 'CI/CD & Bash',
+    boxId: 'cloud-security',
+    accent: '#94a3b8',
+    scatter: { left: 82, top: 67, rotate: 5, delay: 0.6 },
+    journey: [
+      'Wrote Bash automation scripts to chain security scanners, parse outputs, and streamline Linux/server tasks.',
+      'Configured automated Git-to-Vercel CI/CD pipelines with serverless API functions for zero-downtime deployments.',
+      'Applied repeatable build, lint, and environment-variable hygiene across production apps.',
+    ],
+  },
+
+  // === BOX 3: Frontend & Backend Web (7 tools) ===
+  {
+    id: 'react',
+    name: 'React.js',
+    boxId: 'web-fullstack',
+    accent: '#38bdf8',
+    scatter: { left: 12, top: 80, rotate: 6, delay: 0.2 },
+    journey: [
+      'Built responsive frontends for live client portals including CleanMax PRISM DPR, Attendance AI, and Zentrevo.',
+      'Developed the Swipe2Clean user portal with real-time tracking, leaderboards, and gamification (+65% engagement).',
+      'Engineered this interactive portfolio with React 19, Three.js 3D QR rendering, and Motion choreography.',
+    ],
+  },
+  {
+    id: 'nodejs',
+    name: 'Node.js',
+    boxId: 'web-fullstack',
+    accent: '#4ade80',
+    scatter: { left: 29, top: 84, rotate: -5, delay: 0.5 },
+    journey: [
+      'Built scalable backend services and REST APIs for Swipe2Clean and enterprise automation platforms.',
+      'Implemented serverless & Express mail pipelines (Nodemailer) and CLI automation scripts.',
+      'Earned HackerRank NodeJs (Basic) certification validating backend runtime fundamentals.',
+    ],
+  },
+  {
+    id: 'express',
+    name: 'Express.js',
+    boxId: 'web-fullstack',
+    accent: '#cbd5e1',
+    scatter: { left: 47, top: 80, rotate: 4, delay: 0.1 },
+    journey: [
+      'Architected Express.js REST endpoints powering Swipe2Clean waste pickup, geolocation, and reward workflows.',
+      'Built middleware for CORS, JSON validation, and recruiter contact handling in production apps.',
+      'Structured clean modular controllers shared across local Express and Vercel serverless runtimes.',
+    ],
+  },
+  {
+    id: 'javascript',
+    name: 'JavaScript',
+    boxId: 'web-fullstack',
+    accent: '#facc15',
+    scatter: { left: 65, top: 84, rotate: -6, delay: 0.7 },
+    journey: [
+      'Primary full-stack language across frontend React SPAs, Three.js WebGL scenes, and Node.js APIs.',
+      'Built custom interactive UI components (smooth selects, 3D camera toggles, lightbox modals, async fetch flows).',
+      'Applied clean ES module architecture and modern async/await patterns in client deliveries.',
+    ],
+  },
+  {
+    id: 'html-css',
+    name: 'HTML5 & CSS3',
+    boxId: 'web-fullstack',
+    accent: '#fb7185',
+    scatter: { left: 84, top: 82, rotate: 5, delay: 0.4 },
+    journey: [
+      'Crafted accessible semantic layouts and custom glassmorphic/editorial themes across Zentrevo and CleanMax portals.',
+      'Built smooth CSS keyframe marquees, masked video sections, and dark-ember responsive design systems.',
+      'Ensured zero horizontal overflow and crisp typography across mobile, laptop, and desktop breakpoints.',
+    ],
+  },
+  {
+    id: 'bootstrap',
+    name: 'Bootstrap',
+    boxId: 'web-fullstack',
+    accent: '#8b9cb3',
+    scatter: { left: 21, top: 24, rotate: -8, delay: 0.9 },
+    journey: [
+      'Accelerated early full-stack web prototyping and responsive grid layouts during academic and hackathon sprints.',
+      'Built consistent form controls, modals, and dashboard tables with clean mobile responsiveness.',
+      'Transitioned seamlessly from utility/component frameworks into Tailwind CSS and bespoke design tokens.',
+    ],
+  },
+  {
+    id: 'responsive-ui',
+    name: 'Responsive UI',
+    boxId: 'web-fullstack',
+    accent: '#7dd3fc',
+    scatter: { left: 61, top: 24, rotate: 6, delay: 0.6 },
+    journey: [
+      'Delivered mobile-first, multi-viewport interfaces tested across 375px mobile, 1366×768 laptop, and 1440px+ desktop.',
+      'Designed role-based login portals (CleanMax PRISM, Intune Attendance AI) with clean touch and keyboard usability.',
+      'Optimized above-the-fold visual hierarchy so recruiters and clients can act immediately.',
+    ],
+  },
+
+  // === BOX 4: Languages, Data & Tooling (7 tools) ===
+  {
+    id: 'java',
+    name: 'Java',
+    boxId: 'languages-data',
+    accent: '#f97316',
+    scatter: { left: 42, top: 61, rotate: -5, delay: 0.2 },
+    journey: [
+      'Core language for Data Structures & Algorithms — solved 1,260+ problems across LeetCode (1653 peak), CodeChef (3★), and Codeforces.',
+      'Published LeetCode solutions garnering 2.3 Lakh+ views from the developer community.',
+      'Taught C and DSA fundamentals to 180+ students in structured online mentoring sessions.',
+    ],
+  },
+  {
+    id: 'python',
+    name: 'Python',
+    boxId: 'languages-data',
+    accent: '#3b82f6',
+    scatter: { left: 77, top: 38, rotate: 4, delay: 0.5 },
+    journey: [
+      'Built SecurityAstra automated VAPT scanning, Nmap orchestration, and VirusTotal integration in Python.',
+      'Developed LangChain/LangGraph AI automation scripts and NLP/computer-vision (YOLO) workflows.',
+      'Completed LetsUpgrade Python Project Bootcamp and MATLAB/IBM AI foundations.',
+    ],
+  },
+  {
+    id: 'mongodb',
+    name: 'MongoDB',
+    boxId: 'languages-data',
+    accent: '#22c55e',
+    scatter: { left: 10, top: 55, rotate: 7, delay: 0.8 },
+    journey: [
+      'Modeled flexible NoSQL schemas for Swipe2Clean user profiles, pickup logs, leaderboards, and geolocation tracking.',
+      'Completed official MongoDB Introduction certification validating CRUD, indexing, and aggregation basics.',
+      'Integrated Mongoose/MongoDB queries smoothly behind Express.js REST endpoints.',
+    ],
+  },
+  {
+    id: 'mysql',
+    name: 'MySQL',
+    boxId: 'languages-data',
+    accent: '#0284c7',
+    scatter: { left: 53, top: 69, rotate: -6, delay: 0.3 },
+    journey: [
+      'Designed normalized relational schemas, joins, and role-permission tables for structured enterprise apps.',
+      'Earned Scaler SQL certification and EC-Council SQL Injection Attacks security recognition.',
+      'Applied parameterized queries and strict query validation to prevent SQLi vulnerabilities.',
+    ],
+  },
+  {
+    id: 'git',
+    name: 'Git',
+    boxId: 'languages-data',
+    accent: '#f05032',
+    scatter: { left: 26, top: 72, rotate: 5, delay: 0.7 },
+    journey: [
+      'Maintained clean branching, rebasing, and incremental commit histories across solo and team projects.',
+      'Managed multi-environment `.gitignore` and secret hygiene for Vercel and enterprise deployments.',
+      'Collaborated across feature branches during Meridian Solutions engineering sprints and SIH Hackathon.',
+    ],
+  },
+  {
+    id: 'github',
+    name: 'GitHub',
+    boxId: 'languages-data',
+    accent: '#e2e8f0',
+    scatter: { left: 71, top: 73, rotate: -4, delay: 0.1 },
+    journey: [
+      'Hosted open-source & academic repositories (`VibhuDixit-2215001940`) linked directly to Vercel auto-deployments.',
+      'Collaborated on pull requests, issue tracking, and documented project handoffs.',
+      'Connected GitHub workflows to automated build and lint checks.',
+    ],
+  },
+  {
+    id: 'vscode',
+    name: 'VS Code',
+    boxId: 'languages-data',
+    accent: '#38bdf8',
+    scatter: { left: 48, top: 24, rotate: 6, delay: 0.4 },
+    journey: [
+      'Primary daily IDE configured with ESLint/Oxlint, REST testing, Git lens, and Python/Node debugging.',
+      'Used integrated terminal workflows for concurrent Vite frontend + Express backend development.',
+      'Streamlined rapid prototyping and refactoring across 4+ live client web deliveries.',
+    ],
+  },
+]

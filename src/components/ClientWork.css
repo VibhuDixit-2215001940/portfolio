@@ -1,4 +1,4 @@
-.client-work {
+﻿.client-work {
   position: relative;
   max-width: 1240px;
   margin: 0 auto;
@@ -18,7 +18,7 @@
   justify-content: space-between;
   border-radius: 22px;
   border: 1px solid var(--hair);
-  background: linear-gradient(160deg, rgba(36, 12, 4, 0.56) 0%, rgba(16, 5, 1, 0.74) 100%);
+  background: linear-gradient(160deg, rgba(16, 24, 36, 0.56) 0%, rgba(8, 12, 20, 0.74) 100%);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08), 0 22px 44px rgba(0, 0, 0, 0.36);
@@ -28,14 +28,14 @@
 
 .client-card:hover {
   transform: translateY(-5px);
-  border-color: rgba(255, 138, 31, 0.48);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.14), 0 26px 54px rgba(255, 61, 0, 0.14);
+  border-color: rgba(61, 222, 200, 0.48);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.14), 0 26px 54px rgba(14, 159, 138, 0.14);
 }
 
 /* Browser Frame */
 .client-browser {
   border-bottom: 1px solid var(--hair-soft);
-  background: rgba(12, 4, 1, 0.75);
+  background: rgba(7, 11, 18, 0.75);
 }
 
 .client-browser__bar {
@@ -134,8 +134,8 @@
   bottom: 12px;
   padding: 5px 11px;
   border-radius: 999px;
-  background: rgba(14, 4, 1, 0.85);
-  border: 1px solid rgba(255, 138, 31, 0.38);
+  background: rgba(8, 12, 20, 0.85);
+  border: 1px solid rgba(61, 222, 200, 0.38);
   color: rgba(255, 255, 255, 0.92);
   font-size: 11px;
   font-weight: 500;
@@ -170,8 +170,8 @@
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: var(--flame-lit);
-  background: rgba(255, 61, 0, 0.12);
-  border: 1px solid rgba(255, 61, 0, 0.26);
+  background: rgba(14, 159, 138, 0.12);
+  border: 1px solid rgba(14, 159, 138, 0.26);
   padding: 4px 10px;
   border-radius: 8px;
 }
@@ -252,7 +252,7 @@
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background: rgba(255, 61, 0, 0.2);
+  background: rgba(14, 159, 138, 0.2);
   color: var(--flame-lit);
   display: grid;
   place-items: center;
@@ -297,7 +297,7 @@
   display: flex;
   flex-direction: column;
   border-radius: 22px;
-  border: 1px solid rgba(255, 138, 31, 0.38);
+  border: 1px solid rgba(61, 222, 200, 0.38);
   background: #140501;
   overflow: hidden;
   box-shadow: 0 32px 80px rgba(0, 0, 0, 0.8);
@@ -349,7 +349,7 @@
 }
 .shot-modal__close svg { width: 18px; height: 18px; }
 .shot-modal__close:hover {
-  background: rgba(255, 61, 0, 0.25);
+  background: rgba(14, 159, 138, 0.25);
   border-color: var(--flame-lit);
 }
 

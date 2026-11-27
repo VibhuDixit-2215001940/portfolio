@@ -1,313 +1,310 @@
-.experience {
+﻿.experience {
   position: relative;
-  max-width: 1240px;
+  max-width: 1080px;
   margin: 0 auto;
-  padding: 80px var(--gutter) 90px;
+  padding: 88px var(--gutter) 100px;
 }
 
-.exp-layout {
-  display: grid;
-  grid-template-columns: 1.35fr 0.9fr;
-  gap: 24px;
-  align-items: start;
+/* --- intro: left-weighted, editorial --- */
+.exp-intro {
+  max-width: 640px;
+  margin-bottom: 52px;
 }
 
-.exp-company-card,
-.edu-card,
-.extra-card {
-  position: relative;
-  padding: 34px 32px;
-  border-radius: 22px;
-  border: 1px solid var(--hair);
-  background: linear-gradient(160deg, rgba(38, 14, 5, 0.52) 0%, rgba(18, 5, 1, 0.7) 100%);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08), 0 20px 40px rgba(0, 0, 0, 0.32);
-}
-
-.exp-company-header {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 16px;
-  padding-bottom: 24px;
-  margin-bottom: 26px;
-  border-bottom: 1px solid var(--hair-soft);
-}
-
-.exp-company-pill {
-  display: inline-block;
-  font-size: 11.5px;
+.exp-kicker {
+  font-size: 12px;
   font-weight: 600;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
   color: var(--flame-lit);
-  background: rgba(255, 61, 0, 0.14);
-  border: 1px solid rgba(255, 61, 0, 0.3);
-  padding: 4px 10px;
-  border-radius: 999px;
-  margin-bottom: 10px;
-}
-
-.exp-company-name {
-  font-family: var(--font-display);
-  font-size: clamp(22px, 2vw, 26px);
-  font-weight: 600;
-  color: #fff;
-  letter-spacing: -0.02em;
-  margin-bottom: 4px;
-}
-
-.exp-company-meta {
-  font-size: 13.5px;
-  color: var(--ink-faint);
-}
-
-.exp-company-icon,
-.edu-card__icon {
-  width: 46px;
-  height: 46px;
-  border-radius: 12px;
-  background: linear-gradient(135deg, rgba(255, 61, 0, 0.2) 0%, rgba(255, 138, 31, 0.1) 100%);
-  border: 1px solid rgba(255, 61, 0, 0.3);
-  display: grid;
-  place-items: center;
-  color: var(--flame-lit);
-  flex-shrink: 0;
-}
-.exp-company-icon svg,
-.edu-card__icon svg {
-  width: 22px;
-  height: 22px;
-}
-
-/* Timeline */
-.exp-timeline {
-  position: relative;
-  display: grid;
-  gap: 28px;
-  padding-left: 22px;
-}
-
-.exp-timeline::before {
-  content: '';
-  position: absolute;
-  left: 5px;
-  top: 8px;
-  bottom: 8px;
-  width: 1px;
-  background: linear-gradient(180deg, var(--flame-lit), rgba(255, 138, 31, 0.15));
-}
-
-.exp-role {
-  position: relative;
-}
-
-.exp-role-dot {
-  position: absolute;
-  left: -22px;
-  top: 6px;
-  width: 11px;
-  height: 11px;
-  border-radius: 50%;
-  background: var(--flame-lit);
-  box-shadow: 0 0 12px rgba(255, 138, 31, 0.7);
-  border: 2px solid #180601;
-}
-
-.exp-role-head {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 10px;
   margin-bottom: 14px;
 }
 
-.exp-role-title {
+.exp-heading {
   font-family: var(--font-display);
-  font-size: 18px;
+  font-size: clamp(2.15rem, 4.4vw, 3.35rem);
   font-weight: 600;
+  line-height: 1.08;
+  letter-spacing: -0.035em;
   color: #fff;
-  letter-spacing: -0.015em;
+  margin-bottom: 16px;
 }
 
-.exp-role-period {
+.exp-heading em {
+  font-family: var(--font-italic);
+  font-weight: 400;
+  font-style: italic;
+  color: var(--flame-lit);
+}
+
+.exp-lede {
+  font-size: clamp(15px, 1.35vw, 17px);
+  line-height: 1.65;
+  color: var(--ink-soft);
+  max-width: 520px;
+}
+
+/* --- work board: one surface, not stacked glass cards --- */
+.exp-board {
+  position: relative;
+  padding: 0 0 8px;
+  border-top: 1px solid rgba(61, 222, 200, 0.28);
+}
+
+.exp-employer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 28px 0 30px;
+  border-bottom: 1px solid var(--hair-soft);
+}
+
+.exp-employer__place {
   font-size: 13px;
   color: var(--ink-faint);
+  margin-bottom: 6px;
 }
 
-.exp-role-badge {
-  font-size: 11px;
+.exp-employer__name {
+  font-family: var(--font-display);
+  font-size: clamp(1.45rem, 2.4vw, 1.85rem);
   font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  padding: 4px 10px;
-  border-radius: 6px;
-  background: rgba(255, 255, 255, 0.06);
-  color: rgba(255, 255, 255, 0.85);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  letter-spacing: -0.025em;
+  color: #fff;
 }
 
-.exp-role-list {
+.exp-employer__span {
+  flex-shrink: 0;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 12.5px;
+  letter-spacing: 0.02em;
+  color: var(--ink-faint);
+  padding-bottom: 4px;
+}
+
+/* --- role entries --- */
+.exp-roles {
   list-style: none;
   padding: 0;
-  margin: 0 0 14px;
-  display: grid;
-  gap: 10px;
+  margin: 0;
 }
 
-.exp-role-list li {
+.exp-entry {
+  display: grid;
+  grid-template-columns: minmax(150px, 190px) minmax(0, 1fr);
+  gap: 28px 36px;
+  padding: 32px 0 32px 18px;
+  border-bottom: 1px solid var(--hair-soft);
+  border-left: 1px solid transparent;
+  transition: border-left-color 0.35s var(--ease-out);
+}
+
+.exp-entry:hover {
+  border-left-color: rgba(61, 222, 200, 0.55);
+}
+
+.exp-entry:last-child {
+  border-bottom: 0;
+}
+
+.exp-entry__meta {
   display: flex;
-  align-items: flex-start;
-  gap: 10px;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 5px;
+}
+
+.exp-entry__period {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 12.5px;
+  letter-spacing: 0.01em;
+  line-height: 1.45;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.exp-entry__status {
+  align-self: flex-start;
+  font-size: 12.5px;
+  font-weight: 550;
+  color: var(--flame-lit);
+}
+
+.exp-entry__title {
+  font-family: var(--font-display);
+  font-size: clamp(1.15rem, 1.8vw, 1.35rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.exp-entry__summary {
+  font-size: 15px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.82);
+  margin-bottom: 14px;
+  max-width: 58ch;
+}
+
+.exp-entry__points {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 18px;
+  display: grid;
+  gap: 8px;
+  max-width: 58ch;
+}
+
+.exp-entry__points li {
+  position: relative;
+  padding-left: 14px;
   font-size: 14px;
   line-height: 1.55;
   color: var(--ink-soft);
 }
 
-.exp-check {
-  width: 17px;
-  height: 17px;
-  border-radius: 50%;
-  background: rgba(255, 61, 0, 0.2);
-  color: var(--flame-lit);
+.exp-entry__points li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.65em;
+  width: 5px;
+  height: 1px;
+  background: var(--flame-lit);
+}
+
+.exp-entry__stack {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 11.5px;
+  line-height: 1.55;
+  letter-spacing: 0.01em;
+  color: rgba(255, 255, 255, 0.42);
+  max-width: 58ch;
+}
+
+/* --- education + extras: open strip, no card chrome --- */
+.exp-foundation {
   display: grid;
-  place-items: center;
-  flex: none;
-  margin-top: 3px;
-}
-.exp-check svg { width: 10px; height: 10px; }
-
-.exp-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
+  grid-template-columns: 0.9fr 1.2fr;
+  gap: 40px 48px;
+  margin-top: 48px;
+  padding-top: 36px;
+  border-top: 1px solid var(--hair);
 }
 
-/* Right Side Column */
-.exp-side-col {
-  display: grid;
-  gap: 24px;
-}
-
-.edu-card__top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 18px;
-}
-
-.edu-card__cgpa {
-  font-family: var(--font-display);
-  font-size: 14px;
-  font-weight: 600;
-  color: #34d399;
-  background: rgba(52, 211, 153, 0.12);
-  border: 1px solid rgba(52, 211, 153, 0.3);
-  padding: 5px 12px;
-  border-radius: 999px;
-}
-
-.edu-card__label {
-  display: block;
+.exp-foundation__label {
   font-size: 11.5px;
   font-weight: 600;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
-  color: var(--flame-lit);
-  margin-bottom: 6px;
+  color: var(--ink-faint);
+  margin-bottom: 14px;
 }
 
-.edu-card__school {
+.exp-edu__school {
   font-family: var(--font-display);
-  font-size: 23px;
+  font-size: 1.4rem;
   font-weight: 600;
-  color: #fff;
   letter-spacing: -0.02em;
-  margin-bottom: 6px;
+  color: #fff;
+  margin-bottom: 4px;
 }
 
-.edu-card__degree {
+.exp-edu__degree {
   font-size: 15px;
-  color: rgba(255, 255, 255, 0.9);
-  margin-bottom: 6px;
+  color: rgba(255, 255, 255, 0.88);
+  margin-bottom: 8px;
 }
 
-.edu-card__meta {
+.exp-edu__meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 14px;
   font-size: 13px;
   color: var(--ink-faint);
 }
 
-.extra-card__heading {
-  font-family: var(--font-display);
-  font-size: 18px;
-  font-weight: 600;
-  color: #fff;
-  letter-spacing: -0.015em;
-  margin-bottom: 20px;
+.exp-edu__cgpa {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.72);
+  border: 1px solid var(--hair);
+  padding: 3px 8px;
 }
 
-.extra-item {
+.exp-extras__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 18px;
+}
+
+.exp-extra {
   display: flex;
   align-items: flex-start;
-  gap: 14px;
+  justify-content: space-between;
+  gap: 20px;
 }
 
-.extra-item + .extra-item {
-  margin-top: 20px;
-  padding-top: 20px;
-  border-top: 1px solid var(--hair-soft);
-}
-
-.extra-item__icon {
-  width: 38px;
-  height: 38px;
-  border-radius: 10px;
-  background: rgba(255, 61, 0, 0.15);
-  border: 1px solid rgba(255, 61, 0, 0.25);
-  color: var(--flame-lit);
-  display: grid;
-  place-items: center;
-  flex-shrink: 0;
-}
-.extra-item__icon svg { width: 18px; height: 18px; }
-
-.extra-item h4 {
+.exp-extra h4 {
   font-family: var(--font-display);
   font-size: 15.5px;
   font-weight: 600;
   color: #fff;
+  letter-spacing: -0.015em;
   margin-bottom: 4px;
 }
 
-.extra-item p {
+.exp-extra p {
   font-size: 13.5px;
   line-height: 1.5;
   color: var(--ink-soft);
-  margin-bottom: 4px;
+  max-width: 42ch;
 }
 
-.extra-item p strong {
-  color: #fff;
-  font-weight: 600;
-}
-
-.extra-item__date {
-  font-size: 12px;
+.exp-extra__when {
+  flex-shrink: 0;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 11.5px;
   color: var(--ink-faint);
+  padding-top: 3px;
 }
 
-@media (max-width: 960px) {
-  .exp-layout {
+@media (max-width: 820px) {
+  .exp-entry {
     grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .exp-entry__meta {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px 14px;
+  }
+
+  .exp-foundation {
+    grid-template-columns: 1fr;
+    gap: 36px;
   }
 }
 
-@media (max-width: 600px) {
-  .exp-company-card,
-  .edu-card,
-  .extra-card {
-    padding: 26px 20px;
+@media (max-width: 560px) {
+  .experience {
+    padding: 72px var(--gutter) 80px;
+  }
+
+  .exp-employer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .exp-extra {
+    flex-direction: column;
+    gap: 6px;
   }
 }

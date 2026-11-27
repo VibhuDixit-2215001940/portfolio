@@ -1,4 +1,4 @@
-/* Reference: logo hard left, links in a centred outlined capsule where each item
+﻿/* Reference: logo hard left, links in a centred outlined capsule where each item
    carries its own soft chip, one white pill CTA hard right. Bar is transparent. */
 .nav {
   position: absolute;
@@ -29,8 +29,8 @@
   border-radius: 50%;
   object-fit: cover;
   object-position: center top;
-  border: 1.5px solid rgba(255, 138, 31, 0.75);
-  box-shadow: 0 0 14px rgba(255, 61, 0, 0.25);
+  border: 1.5px solid rgba(61, 222, 200, 0.75);
+  box-shadow: 0 0 14px rgba(14, 159, 138, 0.25);
   flex-shrink: 0;
   transform: translateZ(0);
 }

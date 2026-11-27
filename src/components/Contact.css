@@ -1,4 +1,4 @@
-.contact {
+﻿.contact {
   position: relative;
   max-width: 1240px;
   margin: 0 auto;
@@ -16,7 +16,7 @@
   padding: 36px 32px;
   border-radius: 22px;
   border: 1px solid var(--hair);
-  background: linear-gradient(160deg, rgba(32, 10, 2, 0.6) 0%, rgba(18, 5, 1, 0.7) 100%);
+  background: linear-gradient(160deg, rgba(32, 10, 2, 0.6) 0%, rgba(10, 14, 22, 0.7) 100%);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
@@ -46,8 +46,8 @@
   border-radius: 50%;
   object-fit: cover;
   object-position: center top;
-  border: 2px solid rgba(255, 138, 31, 0.7);
-  box-shadow: 0 8px 24px rgba(255, 61, 0, 0.22);
+  border: 2px solid rgba(61, 222, 200, 0.7);
+  box-shadow: 0 8px 24px rgba(14, 159, 138, 0.22);
   flex-shrink: 0;
 }
 
@@ -96,7 +96,7 @@
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background: rgba(255, 61, 0, 0.2);
+  background: rgba(14, 159, 138, 0.2);
   color: var(--flame-lit);
   display: grid;
   place-items: center;
@@ -141,7 +141,7 @@
   padding: 36px 34px;
   border-radius: 22px;
   border: 1px solid var(--hair);
-  background: linear-gradient(160deg, rgba(38, 14, 5, 0.5) 0%, rgba(20, 6, 1, 0.65) 100%);
+  background: linear-gradient(160deg, rgba(18, 28, 40, 0.5) 0%, rgba(10, 16, 26, 0.65) 100%);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08), 0 20px 40px rgba(0, 0, 0, 0.3);
@@ -176,7 +176,7 @@
   width: 100%;
   padding: 12px 14px;
   border-radius: 10px;
-  background: rgba(18, 5, 1, 0.85);
+  background: rgba(10, 14, 22, 0.85);
   border: 1px solid var(--hair);
   color: #fff;
   font-family: var(--font-body);
@@ -188,7 +188,7 @@
 .form-field textarea:focus {
   outline: none;
   border-color: var(--flame-lit);
-  box-shadow: 0 0 0 3px rgba(255, 61, 0, 0.2);
+  box-shadow: 0 0 0 3px rgba(14, 159, 138, 0.2);
 }
 
 .form-field textarea {
@@ -209,7 +209,7 @@
   gap: 10px;
   padding: 11px 14px;
   border-radius: 10px;
-  background: rgba(18, 5, 1, 0.85);
+  background: rgba(10, 14, 22, 0.85);
   border: 1px solid var(--hair);
   color: #ffffff;
   font-family: var(--font-body);
@@ -221,13 +221,13 @@
 }
 
 .custom-select__trigger:hover {
-  border-color: rgba(255, 138, 31, 0.45);
+  border-color: rgba(61, 222, 200, 0.45);
   background: rgba(26, 8, 2, 0.95);
 }
 
 .custom-select--open .custom-select__trigger {
   border-color: var(--flame-lit);
-  box-shadow: 0 0 0 3px rgba(255, 61, 0, 0.22);
+  box-shadow: 0 0 0 3px rgba(14, 159, 138, 0.22);
   background: rgba(26, 8, 2, 0.98);
 }
 
@@ -247,7 +247,7 @@
   width: 18px;
   height: 18px;
   border-radius: 4px;
-  background: rgba(255, 61, 0, 0.18);
+  background: rgba(14, 159, 138, 0.18);
   color: var(--flame-lit);
   flex-shrink: 0;
 }
@@ -290,13 +290,13 @@
   overflow-y: auto;
   border-radius: 12px;
   background: rgba(24, 7, 2, 0.98);
-  border: 1px solid rgba(255, 138, 31, 0.35);
+  border: 1px solid rgba(61, 222, 200, 0.35);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
-  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.65), 0 2px 10px rgba(255, 61, 0, 0.15);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.65), 0 2px 10px rgba(14, 159, 138, 0.15);
   animation: smoothDropdownIn 0.22s cubic-bezier(0.16, 1, 0.3, 1) forwards;
   scrollbar-width: thin;
-  scrollbar-color: rgba(255, 61, 0, 0.35) transparent;
+  scrollbar-color: rgba(14, 159, 138, 0.35) transparent;
 }
 
 @keyframes smoothDropdownIn {
@@ -324,13 +324,13 @@
 }
 
 .custom-select__option:hover {
-  background: rgba(255, 61, 0, 0.18);
+  background: rgba(14, 159, 138, 0.18);
   color: #ffffff;
   transform: translateX(3px);
 }
 
 .custom-select__option--selected {
-  background: rgba(255, 61, 0, 0.24);
+  background: rgba(14, 159, 138, 0.24);
   color: #ffffff;
   font-weight: 550;
 }

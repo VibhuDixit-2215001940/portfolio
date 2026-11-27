@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Instrument+Serif:ital@0;1&display=swap');
+﻿@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Instrument+Serif:ital@0;1&display=swap');
 @import "tailwindcss";
 
 @theme {
@@ -6,22 +6,20 @@
   --font-dm-serif: "Instrument Serif", serif;
 }
 
-/* Fluxora — tokens sampled from the reference frame:
-   deep ember black ground, molten orange horizon, warm-tinted glass. */
+/* Cool graphite + teal — reads engineered, not Midjourney ember. */
 :root {
-  --ground: #2a0b02;
-  --ground-deep: #120400;
+  --ground: #12171f;
+  --ground-deep: #070b10;
   --ink: #ffffff;
   --ink-soft: rgba(255, 255, 255, 0.72);
   --ink-faint: rgba(255, 255, 255, 0.46);
   --ink-ghost: rgba(255, 255, 255, 0.2);
 
-  --flame: #ff3d00;
-  --flame-lit: #ff8a1f;
+  --flame: #0e9f8a;
+  --flame-lit: #3ddec8;
 
-  /* warm glass — a neutral grey tint reads pasted-on over this footage */
-  --glass: rgba(56, 20, 6, 0.42);
-  --glass-strong: rgba(40, 13, 3, 0.62);
+  --glass: rgba(18, 28, 40, 0.55);
+  --glass-strong: rgba(12, 18, 28, 0.72);
   --hair: rgba(255, 255, 255, 0.14);
   --hair-soft: rgba(255, 255, 255, 0.08);
 
@@ -88,7 +86,7 @@ a { color: inherit; text-decoration: none; }
   padding: 10px 16px;
   border-radius: 999px;
   background: #fff;
-  color: #150500;
+  color: #0a1018;
   font-size: 14px;
   font-weight: 600;
 }
@@ -117,19 +115,19 @@ a { color: inherit; text-decoration: none; }
 .btn--light {
   padding: 0.72em 1.35em;
   background: #fff;
-  color: #180600;
+  color: #0a1018;
   box-shadow: 0 10px 26px rgba(0, 0, 0, 0.35);
 }
-.btn--light:hover { transform: translateY(-1px); background: #fff4ec; }
+.btn--light:hover { transform: translateY(-1px); background: #eef8f6; }
 
 .btn--flame {
   padding: 0.5em 0.5em 0.5em 1.5em;
   background: linear-gradient(96deg, var(--flame) 0%, var(--flame-lit) 100%);
   color: #fff;
   font-weight: 600;
-  box-shadow: 0 14px 40px rgba(255, 61, 0, 0.38);
+  box-shadow: 0 14px 40px rgba(14, 159, 138, 0.38);
 }
-.btn--flame:hover { transform: translateY(-2px); box-shadow: 0 20px 52px rgba(255, 61, 0, 0.5); }
+.btn--flame:hover { transform: translateY(-2px); box-shadow: 0 20px 52px rgba(14, 159, 138, 0.5); }
 
 @media (prefers-reduced-motion: reduce) {
   *,

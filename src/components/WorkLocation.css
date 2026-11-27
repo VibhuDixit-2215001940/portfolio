@@ -1,4 +1,4 @@
-/* ==========================================================================
+﻿/* ==========================================================================
    Fluxora — Royal Work Location Showcase (Gurgaon Headquarters)
    ========================================================================== */
 
@@ -29,7 +29,7 @@
   grid-template-columns: 1.1fr 0.9fr;
   gap: clamp(28px, 4vw, 56px);
   align-items: center;
-  background: radial-gradient(circle at 20% 0%, rgba(212, 175, 55, 0.1) 0%, rgba(26, 8, 2, 0.85) 50%, rgba(14, 4, 1, 0.96) 100%);
+  background: radial-gradient(circle at 20% 0%, rgba(212, 175, 55, 0.1) 0%, rgba(26, 8, 2, 0.85) 50%, rgba(8, 12, 20, 0.96) 100%);
   border: 1px solid rgba(212, 175, 55, 0.28);
   border-radius: 28px;
   padding: clamp(28px, 4.5vw, 56px);
@@ -130,7 +130,7 @@
   font-weight: 700;
   line-height: 1.15;
   letter-spacing: -0.025em;
-  background: linear-gradient(135deg, #ffffff 0%, #ffd700 55%, #ff8a1f 100%);
+  background: linear-gradient(135deg, #ffffff 0%, #ffd700 55%, #3ddec8 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -222,7 +222,7 @@
   align-items: center;
   gap: 10px;
   padding: 13px 26px;
-  background: linear-gradient(135deg, rgba(212, 175, 55, 0.2) 0%, rgba(255, 138, 31, 0.18) 100%);
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.2) 0%, rgba(61, 222, 200, 0.18) 100%);
   border: 1px solid rgba(255, 215, 0, 0.45);
   color: #ffd700;
   border-radius: 999px;
@@ -241,7 +241,7 @@
 }
 
 .location-maps-btn:hover {
-  background: linear-gradient(135deg, rgba(212, 175, 55, 0.35) 0%, rgba(255, 138, 31, 0.32) 100%);
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.35) 0%, rgba(61, 222, 200, 0.32) 100%);
   border-color: #ffd700;
   color: #ffffff;
   transform: translateY(-2px);
@@ -404,8 +404,8 @@
   width: 5px;
   height: 5px;
   border-radius: 50%;
-  background: #ff3d00;
-  box-shadow: 0 0 6px #ff3d00;
+  background: #0e9f8a;
+  box-shadow: 0 0 6px #0e9f8a;
 }
 
 /* Light sheen overlay across the poster */

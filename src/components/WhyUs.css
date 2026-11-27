@@ -1,4 +1,4 @@
-.why-us {
+﻿.why-us {
   position: relative;
   max-width: 1240px;
   margin: 0 auto;
@@ -28,15 +28,15 @@
 
 .pillar-card:hover {
   transform: translateY(-4px);
-  border-color: rgba(255, 138, 31, 0.4);
+  border-color: rgba(61, 222, 200, 0.4);
 }
 
 .pillar-card__icon {
   width: 44px;
   height: 44px;
   border-radius: 12px;
-  background: rgba(255, 61, 0, 0.15);
-  border: 1px solid rgba(255, 61, 0, 0.25);
+  background: rgba(14, 159, 138, 0.15);
+  border: 1px solid rgba(14, 159, 138, 0.25);
   color: var(--flame-lit);
   display: grid;
   place-items: center;
@@ -66,7 +66,7 @@
   padding: 22px 28px;
   border-radius: 16px;
   background: rgba(32, 10, 2, 0.6);
-  border: 1px solid rgba(255, 138, 31, 0.3);
+  border: 1px solid rgba(61, 222, 200, 0.3);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
 }
 

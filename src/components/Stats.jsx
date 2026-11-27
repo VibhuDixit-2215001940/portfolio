@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+﻿import { useEffect, useRef, useState } from 'react'
 import { animate, motion, useInView } from 'motion/react'
 
 function AnimatedCounter({ value, suffix = '', prefix = '', decimals = 0 }) {
@@ -97,7 +97,7 @@ export default function Stats() {
       <div
         className="absolute inset-x-0 top-0 h-40 pointer-events-none z-0"
         style={{
-          background: 'linear-gradient(180deg, rgba(255, 61, 0, 0.08) 0%, rgba(20, 6, 1, 0) 100%)',
+          background: 'linear-gradient(180deg, rgba(14, 159, 138, 0.08) 0%, rgba(10, 16, 26, 0) 100%)',
         }}
       />
       <div
@@ -216,7 +216,7 @@ export default function Stats() {
             <div
               className="absolute w-72 sm:w-80 h-72 sm:h-80 rounded-full pointer-events-none"
               style={{
-                background: 'radial-gradient(circle, rgba(255, 61, 0, 0.22) 0%, rgba(255, 138, 31, 0.08) 45%, transparent 70%)',
+                background: 'radial-gradient(circle, rgba(14, 159, 138, 0.22) 0%, rgba(61, 222, 200, 0.08) 45%, transparent 70%)',
                 filter: 'blur(35px)',
               }}
             />
