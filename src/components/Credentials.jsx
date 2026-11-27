@@ -10,7 +10,7 @@ const codingPlatforms = [
     statLabel: 'Problems Solved',
     highlight: 'Peak Rating 1653',
     sub: '2.3 Lakh+ views on published solutions',
-    href: 'https://leetcode.com',
+    href: 'https://leetcode.com/u/VIBHU_DIXIT/',
   },
   {
     name: 'CodeChef',
@@ -26,7 +26,7 @@ const codingPlatforms = [
     statLabel: 'Challenges Practiced',
     highlight: 'Peak Rating 1105',
     sub: 'Algorithmic speed & contest practice',
-    href: 'https://codeforces.com',
+    href: 'https://codeforces.com/profile/VIBHU_DIXIT/',
   },
 ]
 

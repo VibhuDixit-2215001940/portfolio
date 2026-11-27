@@ -1,4 +1,4 @@
-import { ArrowRight, CheckIcon, ExternalLinkIcon, GitHubLogo, SparklesIcon } from './icons.jsx'
+import { ArrowRight, CheckIcon, ExternalLinkIcon, GitHubLogo, Globe, SparklesIcon } from './icons.jsx'
 import './Projects.css'
 
 const projects = [
@@ -15,8 +15,8 @@ const projects = [
     metric: 'End-to-End VAPT',
     metricSub: 'Web, Endpoint & Network',
     stack: ['Python', 'Nmap', 'VirusTotal', 'WDK'],
-    linkLabel: 'View on GitHub',
-    linkHref: 'https://github.com/VibhuDixit-2215001940',
+    linkLabel: 'Visit Live Portal',
+    linkHref: 'https://tools.securityastra.com/login',
     external: true,
     featured: true,
   },
@@ -137,7 +137,7 @@ export default function Projects() {
                 rel={project.external ? 'noopener noreferrer' : undefined}
                 className="project-card__link"
               >
-                {project.external && <GitHubLogo />}
+                {project.linkHref.includes('github.com') ? <GitHubLogo /> : project.external ? <Globe /> : null}
                 <span>{project.linkLabel}</span>
                 <ExternalLinkIcon />
               </a>
