@@ -1,9 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+>
   <url>
     <loc>https://www.vibhudixit.in/</loc>
     <lastmod>2026-11-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+
+    <image:image>
+      <image:loc>https://www.vibhudixit.in/vibhu-og.jpg</image:loc>
+      <image:title>Vibhu Dixit</image:title>
+      <image:caption>Vibhu Dixit — AI Engineer and Cybersecurity Specialist at Meridian Solutions</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://www.vibhudixit.in/vibhu-avatar.jpg</image:loc>
+      <image:title>Vibhu Dixit portrait</image:title>
+      <image:caption>Portrait of Vibhu Dixit, Associate AI Engineer</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://www.vibhudixit.in/client-work/cleanmax-prism.png</image:loc>
+      <image:title>CleanMax PRISM by Vibhu Dixit</image:title>
+      <image:caption>Client portal work by Vibhu Dixit — CleanMax PRISM</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://www.vibhudixit.in/client-work/zentrevo.png</image:loc>
+      <image:title>Zentrevo by Vibhu Dixit</image:title>
+      <image:caption>Client portal work by Vibhu Dixit — Zentrevo</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://www.vibhudixit.in/client-work/intune-attendance.png</image:loc>
+      <image:title>Intune Attendance AI by Vibhu Dixit</image:title>
+      <image:caption>Client portal work by Vibhu Dixit — Intune Attendance AI</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://www.vibhudixit.in/client-work/cleanmax-corporate.png</image:loc>
+      <image:title>CleanMax Corporate by Vibhu Dixit</image:title>
+      <image:caption>Client portal work by Vibhu Dixit — CleanMax Corporate</image:caption>
+    </image:image>
   </url>
 </urlset>
